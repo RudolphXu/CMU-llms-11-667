@@ -1,0 +1,19 @@
+  0%|                                                                                                                                                                                                                                                                                             | 0/391 [00:00<?, ?it/s]You're using a GPTNeoXTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Traceback (most recent call last):
+  File "/root/autodl-tmp/CMU-llms-11-667/assignment3/hw3-starter-code-2024.1.2/src/retriever/driver/train.py", line 140, in <module>
+    main()
+  File "/root/autodl-tmp/CMU-llms-11-667/assignment3/hw3-starter-code-2024.1.2/src/retriever/driver/train.py", line 133, in main
+    trainer.train()
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/trainer.py", line 2164, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/trainer.py", line 2524, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/CMU-llms-11-667/assignment3/hw3-starter-code-2024.1.2/src/retriever/trainer.py", line 53, in training_step
+    return super(TevatronTrainer, self).training_step(*args) / self._dist_loss_scale_factor
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/transformers/trainer.py", line 3654, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: TevatronTrainer.compute_loss() got an unexpected keyword argument 'num_items_in_batch'

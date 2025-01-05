@@ -1,0 +1,16 @@
+{"time":"2025-01-06T07:10:55.592767107+08:00","level":"INFO","msg":"using version","core version":"0.19.1"}
+{"time":"2025-01-06T07:10:55.59279973+08:00","level":"INFO","msg":"created symlink","path":"/root/autodl-tmp/CMU-llms-11-667/assignment3/hw3-starter-code-2024.1.2/src/retriever/driver/wandb/run-20250106_071055-p8l6ga96/logs/debug-core.log"}
+{"time":"2025-01-06T07:10:55.714017064+08:00","level":"INFO","msg":"created new stream","id":"p8l6ga96"}
+{"time":"2025-01-06T07:10:55.714094973+08:00","level":"INFO","msg":"stream: started","id":"p8l6ga96"}
+{"time":"2025-01-06T07:10:55.714127363+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"p8l6ga96"}
+{"time":"2025-01-06T07:10:55.714309773+08:00","level":"INFO","msg":"sender: started","stream_id":"p8l6ga96"}
+{"time":"2025-01-06T07:10:55.714323277+08:00","level":"INFO","msg":"handler: started","stream_id":"p8l6ga96"}
+{"time":"2025-01-06T07:10:56.414749841+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-06T07:10:57.643594732+08:00","level":"INFO","msg":"stream: closing","id":"p8l6ga96"}
+{"time":"2025-01-06T07:10:57.643659914+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-06T07:10:57.644494572+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-06T07:10:58.859876873+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-06T07:10:59.652825009+08:00","level":"INFO","msg":"handler: closed","stream_id":"p8l6ga96"}
+{"time":"2025-01-06T07:10:59.652913794+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"p8l6ga96"}
+{"time":"2025-01-06T07:10:59.652949764+08:00","level":"INFO","msg":"sender: closed","stream_id":"p8l6ga96"}
+{"time":"2025-01-06T07:10:59.653129108+08:00","level":"INFO","msg":"stream: closed","id":"p8l6ga96"}
