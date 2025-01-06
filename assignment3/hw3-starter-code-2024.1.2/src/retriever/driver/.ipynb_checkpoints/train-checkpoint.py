@@ -37,6 +37,7 @@ if not os.path.exists(trained_model_save_path):
 trained_model_name = 'pythia-160m-1024-marco-docs-bow-contrastive-pretrain-marco-passage-sft'
 training_data = 'Tevatron/msmarco-passage-aug'
 
+import torch
 
 def main():
     parser = HfArgumentParser(
@@ -66,7 +67,11 @@ def main():
           "--num_train_epochs", "1",
           "--logging_steps", "1",
           "--gradient_accumulation_steps", "2",
-          "--run_name", trained_model_name
+          "--run_name", trained_model_name,
+        "--bf16",
+        "--gradient_checkpointing",
+        "--overwrite_output_dir",
+          "--report_to", "wandb",
     ]
 
 
@@ -116,9 +121,11 @@ def main():
         model_args,
         training_args,
         cache_dir = model_args.cache_dir,
+        torch_dtype = torch.bfloat16,
         attn_implementation = "flash_attention_2"
     )
 
+    model.to('cuda')
     train_dataset = TrainDataset(data_args)
     collator = TrainCollator(data_args, tokenizer)
 
