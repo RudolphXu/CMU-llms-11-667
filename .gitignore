@@ -3,3 +3,4 @@ assignment3/hw3-starter-code-2024.1.2/src/retriever/driver/wandb/
 assignment3/hw3-starter-code-2024.1.2/src/retriever/data/
 **/__pycache__/
 **/ipynb_checkpoints/
+**/.env
